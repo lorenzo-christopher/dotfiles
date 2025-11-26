@@ -1,0 +1,9 @@
+" Filename     :vimrc
+" Author       :Lorenzo E. Christopher <https://github.com/lorenzo-christopher>
+
+" Source external configuration files
+source $HOME/.vim/general/settings.vim
+source $HOME/.vim/keys/mappings.vim
+source $HOME/.vim/vim-plug/plugins.vim
+
+
