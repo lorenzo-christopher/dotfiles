@@ -1,0 +1,28 @@
+# Filename     :bash_aliases
+# Author       :Lorenzo E. Christopher <https://github.com/lorenzo-christopher>
+# Purpose      :separate .bash_aliases for my favorite Bash aliases, to keep
+# things more tidy. This file is "sourced" by .bashrc (see bashrc)
+
+# Make some of the file manipulation programs verbose and interactive
+alias mv="mv -vi"
+alias rm="rm -vi"
+alias cp="cp -vi"
+
+# Prints disk usage in human readable form
+alias du="du -sh"
+
+# Clear the screen of your clutter
+alias c="clear"
+
+# Mounts
+alias df="df -hT"
+
+# Memory
+alias free="free -mth"
+
+# List (ls)
+alias ll="ls -l"    #long list
+alias la="ls -la"
+
+# Networking
+alias ping="ping -c5"
