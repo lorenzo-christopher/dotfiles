@@ -1,0 +1,23 @@
+Check the status of your plugins
+
+:PlugStatus
+
+Install all of your plugins
+
+:PlugInstall
+
+To update your plugins
+
+:PlugUpdate
+
+After the update you can press d to see the differences or run
+
+:PlugDiff
+
+To remove plugins that are no longer defined in the plugins.vim file
+
+:PlugClean
+
+Finally if you want to upgrade vim-plug itself run the following
+
+:PlugUpgrade
