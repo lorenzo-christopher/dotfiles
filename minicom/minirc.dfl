@@ -1,0 +1,14 @@
+pu mbcolor     BLACK
+pu mfcolor     GREEN
+pu sfcolor     BLACK
+pu sbcolor     MAGENTA
+pu statusline  enabled
+pu histlines   3000
+pu port        /dev/ttyACM0
+pu baudrate    9600
+pu bits        8
+pu parity      N
+pu stopbits    1
+pu rtscts      No
+pu xonxoff     No
+
