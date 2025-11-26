@@ -1,0 +1,50 @@
+# Filename :~/dotfiles/git/config
+# Author   :Lorenzo E. Christopher <https://github.com/lorenzo-christopher>
+
+[user]
+	name = lorenzo-christopher
+	email = lorenzo.odlare.christopher@gmail.com
+
+# Home lab local gitlab instance
+[includeIf "gitdir:~/gitrepos/local-gitlab/"]
+    path = ~/gitrepos/local-gitlab/.gitconfig
+
+# External public gitlab
+[includeIf "gitdir:~/gitrepos/external-gitlab/"]
+    path = ~/gitrepos/external-gitlab/.gitconfig
+
+# Internal work git instance
+[includeIf "gitdir:~/gitrepos/work/"]
+    path = ~/gitrepos/work/.gitconfig
+
+
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	rlog = log --pretty=oneline --abbrev-commit --graph --decorate	
+	rt = reset --hard
+	df = diff
+	dc = diff --cached
+	l = log --graph --decorate --pretty=oneline --abbrev-commit
+	la = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	lg = log --graph --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all	
+	lp = log -p
+	ls = ls-files	
+
+[core]
+	editor = vim
+[credential]
+	helper = cache --timeout=3600
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+
+[color "status"]
+    added = green bold
+    changed = red bold
+    untracked = red
+    branch = yellow black bold ul
