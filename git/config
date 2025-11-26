@@ -6,8 +6,8 @@
 	email = lorenzo.odlare.christopher@gmail.com
 
 # Home lab local gitlab instance
-[includeIf "gitdir:~/gitrepos/local-gitlab/"]
-    path = ~/gitrepos/local-gitlab/.gitconfig
+[includeIf "gitdir:~/gitrepos/hm/"]
+    path = ~/gitrepos/hm/.gitconfig
 
 # External public gitlab
 [includeIf "gitdir:~/gitrepos/external-gitlab/"]
